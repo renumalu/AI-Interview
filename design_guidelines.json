@@ -1,0 +1,177 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "mission": "Create a mock interview platform that feels like a high-stakes professional environment, not a generic SaaS tool.",
+    "principles": [
+      "Fusion over Imitation: Mix 'Swiss Precision' with 'Code Editor' aesthetics.",
+      "Emotion First: The design must evoke 'Focus' and 'Professional Growth'.",
+      "Content is King: The interview questions and feedback are the heroes.",
+      "Zoom In: Focus on the timer and the question.",
+      "Negative Space: Use whitespace to reduce cognitive load during the interview."
+    ],
+    "anti_patterns": [
+      "No generic 'SaaS Blue' gradients.",
+      "No 'Inter' for headings.",
+      "No center-aligned text for long descriptions.",
+      "No 'cute' AI mascots (robots/brains)."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Plus Jakarta Sans, sans-serif",
+      "weights": ["600", "700", "800"],
+      "usage": "All section titles, hero text, and modal headers.",
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, inputs, and general text.",
+      "letter_spacing": "tracking-normal"
+    },
+    "code": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Code snippets, technical terms, and the code editor interface."
+    }
+  },
+  "colors": {
+    "theme_strategy": "Light Mode Default (Trust/Clarity) with Dark Mode Toggle (Developer Preference).",
+    "palette": {
+      "primary": {
+        "name": "Deep Royal Blue",
+        "hex": "#1e40af",
+        "tailwind": "blue-800",
+        "usage": "Primary buttons, active states, key branding elements."
+      },
+      "secondary": {
+        "name": "Slate Neutral",
+        "hex": "#f1f5f9",
+        "tailwind": "slate-100",
+        "usage": "Backgrounds, panels, subtle borders."
+      },
+      "accent_success": {
+        "name": "Emerald Signal",
+        "hex": "#10b981",
+        "tailwind": "emerald-500",
+        "usage": "High scores, success states, 'Ready' indicators."
+      },
+      "accent_warning": {
+        "name": "Amber Focus",
+        "hex": "#f59e0b",
+        "tailwind": "amber-500",
+        "usage": "Timer warnings, 'Needs Improvement' indicators."
+      },
+      "accent_danger": {
+        "name": "Rose Alert",
+        "hex": "#e11d48",
+        "tailwind": "rose-600",
+        "usage": "Errors, 'Not Ready' indicators, critical alerts."
+      },
+      "background": {
+        "light": "#ffffff",
+        "dark": "#0f172a"
+      },
+      "text": {
+        "light": "#0f172a",
+        "dark": "#f8fafc"
+      }
+    },
+    "gradients": "Minimal usage. Only for 'Active State' borders or subtle glows. NO full-screen gradients."
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "style": "Bento Grid / Asymmetric",
+      "hero": "Split layout: Left text (H1 + CTA), Right image (Confident Candidate).",
+      "features": "Grid layout (3-col) with 'Glass' cards for features.",
+      "spacing": "Generous (py-20, px-6)."
+    },
+    "interview_interface": {
+      "style": "Split Screen Focus Mode",
+      "left_panel": "AI Avatar/Video Placeholder (Top) + Question Display (Bottom).",
+      "right_panel": "Answer Input (Text Area or Code Editor).",
+      "header": "Minimal. Logo (Left), Timer (Center), End Button (Right).",
+      "footer": "Hidden or minimal status bar."
+    },
+    "dashboard": {
+      "style": "High Density Grid",
+      "widgets": [
+        "Readiness Score (Radial Chart)",
+        "Recent Interviews (List)",
+        "Skill Breakdown (Radar Chart)",
+        "Weakness Analysis (Card)"
+      ]
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Sharp or slightly rounded (rounded-md).",
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-md.",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80.",
+      "ghost": "hover:bg-accent hover:text-accent-foreground."
+    },
+    "cards": {
+      "style": "Flat with subtle border (border-slate-200 dark:border-slate-800).",
+      "hover": "shadow-lg transition-all duration-200 -translate-y-1."
+    },
+    "inputs": {
+      "style": "Minimalist. border-b-2 (focus:border-primary) or standard outline with ring-offset.",
+      "focus": "ring-2 ring-primary/20."
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn Charts)",
+      "types": ["RadialBar (Score)", "Radar (Skills)", "Line (Progress)"]
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Subtle noise overlay on backgrounds to reduce 'digital flatness'.",
+    "glassmorphism": "Use backdrop-blur-md for sticky headers and modal overlays.",
+    "motion": "Framer Motion for page transitions and staggered list entrances.",
+    "icons": "Lucide React (Clean, consistent stroke width)."
+  },
+  "image_urls": {
+    "hero_candidate": {
+      "url": "https://images.unsplash.com/photo-1698047681452-08eba22d0c64?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBqb2IlMjBpbnRlcnZpZXclMjBjb25maWRlbnQlMjBjYW5kaWRhdGV8ZW58MHx8fHwxNzY5OTQ0ODc3fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Confident Asian woman in suit, smiling during interview.",
+      "usage": "Hero section main image."
+    },
+    "office_bg": {
+      "url": "https://images.unsplash.com/photo-1765728617352-895327fcf036?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWNobm9sb2d5JTIwd29ya3NwYWNlfGVufDB8fHx8MTc2OTk0NDg3OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern hallway with seating areas.",
+      "usage": "Background for login/signup or subtle overlay."
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text is WCAG AA compliant. Use slate-700+ for text on white.",
+    "focus_states": "Visible ring-2 ring-offset-2 ring-primary.",
+    "reduced_motion": "Respect prefers-reduced-motion media query."
+  },
+  "instructions_to_main_agent": [
+    "Use 'Plus Jakarta Sans' for all headings. Import it from Google Fonts.",
+    "Implement the 'Split Screen' layout for the interview page strictly.",
+    "Use the 'Deep Royal Blue' as the primary brand color.",
+    "Ensure the 'Timer' is prominent and uses the 'Amber' warning color when time is low.",
+    "Use 'Recharts' for the performance visualization.",
+    "Do NOT use generic AI robot icons. Use abstract geometric shapes or professional icons."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
